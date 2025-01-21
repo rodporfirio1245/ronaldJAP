@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ronald Porfirio | Desenvolvedor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+
+<body>
+  <!-- Indicador de Progresso de Scroll -->
+  <div class="progress-container">
+    <div class="progress-bar" id="progress-bar"></div>
+  </div>
+
+  <!-- Cabeçalho com WebGL e Fundo Interativo -->
+  <header class="header fade-in-element" id="header">
+    <div id="webgl-background"></div>
+    <div class="header-content">
+      <h1>Bem-vindo ao meu Portfólio</h1>
+      <p>Soluções inovadoras em .NET e desenvolvimento web</p>
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#inicio" class="hvr-underline-from-center">Início</a></li>
+        <li><a href="#habilidades" class="hvr-underline-from-center">Habilidades</a></li>
+        <li><a href="#projetos" class="hvr-underline-from-center">Projetos</a></li>
+        <li><a href="#sobre" class="hvr-underline-from-center">Sobre</a></li>
+        <li><a href="#contato" class="hvr-underline-from-center">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção de Apresentação com Particles.js -->
+  <section id="inicio" class="intro-section fade-in-element"
+    style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 100vh;">
+    <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+    <div class="intro-content" style="max-width: 600px; word-wrap: break-word; overflow-wrap: break-word;">
+      <h2 class="animate__animated animate__fadeInDown">
+        <span class="typing-effect">Olá, sou Ronald Porfirio</span>
+      </h2>
+      <p class="animate__animated animate__fadeInUp animate__delay-1s">
+        Especialista em desenvolvimento .NET e apaixonado por criar landing pages e sites de vendas que não apenas
+        atraem, mas também convertem. Com um olhar atento à escalabilidade, eficiência e inovação, transformo ideias em
+        soluções digitais impactantes, projetadas para gerar resultados reais. Vamos juntos explorar o potencial de suas
+        ideias e levá-las ao próximo nível!
+      </p>
+      <a href="#projetos" class="btn-cta hvr-grow animate__animated animate__fadeInUp animate__delay-2s">Veja Meus
+        Projetos</a>
+    </div>
+  </section>
+
+
+  <!-- Seção Habilidades -->
+  <section id="habilidades" class="skills-section fade-in-element">
+    <h2>Minhas Especialidades</h2>
+    <div class="skills-container">
+      <div class="skill animate__animated animate__fadeInUp">
+        <h3>Desenvolvimento Front-End</h3>
+        <p>Crio interfaces modernas e responsivas para sites e landing pages, combinando HTML, CSS e JavaScript com
+          frameworks como Angular e React para oferecer experiências visuais envolventes.</p>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill animate__animated animate__fadeInUp">
+        <h3>Arquitetura Back-End</h3>
+        <p>Desenvolvo sistemas robustos e escaláveis com .NET e C#, integrando sites a bancos de dados e APIs para
+          garantir funcionalidade, desempenho e segurança de ponta a ponta.</p>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill animate__animated animate__fadeInUp">
+        <h3>Otimização e Conversão</h3>
+        <p>Especialista em criar sites e landing pages otimizados para SEO e alta conversão, utilizando práticas
+          avançadas para atrair, engajar e reter visitantes com desempenho superior.</p>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 95%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Seção Projetos -->
+  <section id="projetos" class="projects-section fade-in-element">
+    <h2>Portfólio de Projetos</h2>
+    <div class="projects-container">
+      <!-- Projeto 1: Advogado -->
+      <div class="project-card" onclick="openModal('modal1')">
+        <div class="project-img" style="background-image: url('Projetos capa/capadrlucas.png')"></div>
+        <div class="project-content">
+          <h3>Landing Page para Advogado</h3>
+          <p>
+            Desenvolvi uma landing page responsiva e moderna para um advogado, com um sistema de captura de clientes e
+            foco em conversão.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 2: Agência -->
+      <div class="project-card" onclick="openModal('modal2')">
+        <div class="project-img" style="background-image: url('Projetos capa/capajocamaluly.png')"></div>
+        <div class="project-content">
+          <h3>Landing Page para Agência</h3>
+          <p>
+            Criei uma landing page interativa para uma agência, com design focado na apresentação de serviços e um
+            sistema para geração de leads.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 3: Profissional de Marketing -->
+      <div class="project-card" onclick="openModal('modal3')">
+        <div class="project-img" style="background-image: url('images/projeto3.jpg')"></div>
+        <div class="project-content">
+          <h3>Landing Page para Profissional de Marketing</h3>
+          <p>
+            Desenvolvi uma landing page dinâmica para um profissional de marketing, com captura de contatos e integração
+            com ferramentas de automação.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modais -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <img src="Projetos capa/capadrlucas.png" alt="Landing Page para Advogado" />
+      <h3>Landing Page para Advogado</h3>
+      <p><strong>Cliente:</strong> Dr. Lucas - Advocacia Especializada</p>
+      <p><strong>Projeto:</strong> Criação de uma landing page responsiva</p>
+      <p><strong>Link:</strong> <a href="https://example.com/advogado" target="_blank">https://example.com/advogado</a>
+      </p>
+      <p><strong>Descrição:</strong> Desenvolvi uma landing page moderna e otimizada, com um sistema de captura de
+        clientes focado em gerar leads qualificados.</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <img src="Projetos capa/capajocamaluly.png" alt="Landing Page para Agência" />
+      <h3>Landing Page para Agência</h3>
+      <p><strong>Cliente:</strong> Jocamaluly Agência de Publicidade</p>
+      <p><strong>Projeto:</strong> Design e desenvolvimento de landing page</p>
+      <p><strong>Link:</strong> <a href="https://jocamaluly.com.br/" target="_blank">https://jocamaluly.com.br/</a></p>
+      <p><strong>Descrição:</strong> Landing page interativa que apresenta serviços, portfólio e possui integração com
+        um sistema de geração de leads.</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <img src="images/projeto3.jpg" alt="Landing Page para Profissional de Marketing" />
+      <h3>Landing Page para Profissional de Marketing</h3>
+      <p><strong>Cliente:</strong> Marketing Pro</p>
+      <p><strong>Projeto:</strong> Criação de uma landing page dinâmica</p>
+      <p><strong>Link:</strong> <a href="https://example.com/marketing"
+          target="_blank">https://example.com/marketing</a></p>
+      <p><strong>Descrição:</strong> Página personalizada para capturar leads e exibir serviços, integrada com
+        plataformas de automação de marketing.</p>
+    </div>
+  </div>
+
+
+  <!-- Seção Sobre Mim -->
+  <section id="sobre" class="about-section fade-in-element">
+    <h2>Minha Trajetória Profissional</h2>
+    <div class="about-content">
+      <p>
+        Sou Ronald Porfirio, desenvolvedor full-stack apaixonado por tecnologia, sempre em busca de criar soluções que
+        aliem eficiência, inovação e resultados. Abaixo, compartilho minha trajetória profissional em uma linha do
+        tempo:
+      </p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Início: Estudo Autodidata</h3>
+          <p><strong>Primeiros passos (2015 - 2018)</strong></p>
+          <p>
+            Aos 16 anos, iniciei meu aprendizado em casa, explorando hardware e sistemas simples. Durante esse período,
+            mergulhei na montagem e manutenção de computadores, ganhando experiência prática em resolver problemas
+            técnicos e aprendendo sobre o funcionamento interno de sistemas.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <h3>Primeira Experiência Profissional</h3>
+          <p><strong>Aprendiz de TI (2018 - 2020)</strong></p>
+          <p>
+            Atuei como aprendiz de tecnologia, onde desenvolvi habilidades práticas no suporte técnico e gerenciamento
+            de dispositivos. Essa experiência reforçou minha paixão por tecnologia e me motivou a iniciar os estudos em
+            linguagens de programação como C# e JavaScript.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <h3>Expansão Técnica e Estratégica</h3>
+          <p><strong>Analista de Dados e TI (2020 - 2023)</strong></p>
+          <p>
+            Trabalhei em um grande grupo de concessionárias, onde ampliei meu conhecimento técnico. Atuei na análise e
+            visualização de dados, gerenciamento de bancos de dados, desenvolvimento de sistemas e suporte de TI. Essas
+            experiências foram fundamentais para consolidar minha habilidade de conectar a tecnologia às necessidades
+            empresariais.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <h3>Foco no Desenvolvimento</h3>
+          <p><strong>Desenvolvedor de Aplicações (2023 - Presente)</strong></p>
+          <p>
+            Decidi me especializar no desenvolvimento de aplicações e na resolução de problemas sistêmicos, com foco em
+            bancos de dados e automações. Recentemente, foquei meus esforços na criação de landing pages e sites
+            otimizados, ajudando empresas a se destacarem no ambiente digital com soluções modernas, práticas e
+            orientadas para conversão.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Seção de Contato -->
+  <section id="contato" class="contact-section fade-in-element">
+    <h2>Vamos Trabalhar Juntos?</h2>
+    <form id="contactForm">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu email" required />
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required />
+
+      <label for="segmento">Segmento</label>
+      <input type="text" id="segmento" name="segmento" placeholder="Digite o segmento do seu negócio" required />
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
+
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-content fade-in-element">
+      <p>&copy; 2024 Ronald Porfirio. Todos os direitos reservados.</p>
+      <div class="social-icons">
+        <a href="https://github.com/rodporfirio1245"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/ronaldporfirio1"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+<div id="splash-screen">
+  <h1>IN CODE WE TRUST</h1>
+</div>
+<button id="back-to-top" title="Voltar ao topo">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+
+
+</html>
+
+<!-- SweetAlert2 Library -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+
+
+  // Inicializa o EmailJS
+  (function () {
+    emailjs.init("P1smA0iSYQhxGynhJ"); // Substitua pelo seu User ID do EmailJS
+  })();
+
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+
+    // Captura os valores dos campos
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const telefone = document.getElementById("telefone").value;
+    const segmento = document.getElementById("segmento").value;
+    const mensagem = document.getElementById("mensagem").value;
+
+    // Cria o objeto com os dados para o template do ADMIN
+    const adminParams = {
+      from_name: nome,
+      from_email: email,
+      from_telefone: telefone,
+      from_segmento: segmento,
+      message: mensagem,
+    };
+
+    // Cria o objeto com os dados para o template do CLIENTE
+    const clientParams = {
+      to_name: nome,
+      to_email: email,
+    };
+
+    // Envia o e-mail para o ADMIN
+    emailjs.send("service_d1aor92", "template_jm5a2mv", adminParams)
+      .then(
+        function (response) {
+          console.log("E-mail para admin enviado com sucesso", response.status, response.text);
+
+          // Após enviar para o admin, envia o e-mail para o CLIENTE
+          emailjs.send("service_d1aor92", "template_p4veplr", clientParams)
+            .then(
+              function (response) {
+                // Exibe mensagem de sucesso ao cliente
+                Swal.fire({
+                  icon: "success",
+                  title: "Mensagem Enviada!",
+                  text: "Obrigado por entrar em contato! Um e-mail de confirmação foi enviado para você.",
+                });
+
+                // Reseta o formulário após o envio
+                document.getElementById("contactForm").reset();
+              },
+              function (error) {
+                // Exibe mensagem de erro no envio para o cliente
+                Swal.fire({
+                  icon: "error",
+                  title: "Erro no Envio",
+                  text: "Sua mensagem foi enviada para nós, mas houve um erro ao enviar o e-mail de confirmação. Por favor, tente novamente mais tarde.",
+                });
+              }
+            );
+        },
+        function (error) {
+          // Exibe mensagem de erro no envio para o admin
+          Swal.fire({
+            icon: "error",
+            title: "Erro ao Enviar!",
+            text: "Houve um problema ao enviar sua mensagem. Tente novamente mais tarde.",
+          });
+        }
+      );
+  });
+
+
+
+  // Função para exibir o botão ao rolar para baixo
+  window.addEventListener("scroll", () => {
+    const backToTopButton = document.getElementById("back-to-top");
+    if (window.scrollY > 300) {
+      backToTopButton.classList.add("show");
+    } else {
+      backToTopButton.classList.remove("show");
+    }
+  });
+
+  // Função para rolar suavemente até o topo ao clicar
+  document.getElementById("back-to-top").addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+
+  /* Inicialização do Scroll Progress */
+  window.addEventListener("scroll", () => {
+    let header = document.querySelector("header");
+    header.classList.toggle("scrolled", window.scrollY > 0);
+    let progressBar = document.getElementById("progress-bar");
+    let scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    let scrollTop = window.scrollY;
+    let scrollPercent = (scrollTop / scrollHeight) * 100;
+    progressBar.style.width = scrollPercent + "%";
+  });
+
+  /* Menu Hamburguer */
+  const hamburger = document.getElementById("hamburger");
+  const nav = document.getElementById("nav");
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+
+  /* Partículas com Particles.js */
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 80, density: { enable: true, value_area: 800 } },
+      color: { value: "#00d1b2" },
+      shape: {
+        type: "circle",
+        stroke: { width: 0, color: "#000000" },
+      },
+      opacity: {
+        value: 0.5,
+        random: true,
+        anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false },
+      },
+      size: {
+        value: 3,
+        random: true,
+        anim: { enable: true, speed: 3, size_min: 0.1, sync: false },
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.3,
+        width: 1,
+      },
+      move: {
+        enable: true,
+        speed: 2,
+        direction: "none",
+        random: false,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+        attract: { enable: false, rotateX: 600, rotateY: 1200 },
+      },
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "grab" },
+        onclick: { enable: true, mode: "push" },
+        resize: true,
+      },
+      modes: {
+        grab: { distance: 200, line_linked: { opacity: 0.5 } },
+        bubble: { distance: 400, size: 10, duration: 2, opacity: 8, speed: 3 },
+        repulse: { distance: 200, duration: 0.4 },
+        push: { particles_nb: 4 },
+        remove: { particles_nb: 2 },
+      },
+    },
+    retina_detect: true,
+  });
+</script>
+
+<script>
+  // Configuração do Three.js para o Background
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+  const renderer = new THREE.WebGLRenderer({ alpha: true });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  document.getElementById('webgl-background').appendChild(renderer.domElement);
+
+  // Criação de Partículas
+  const particlesGeometry = new THREE.BufferGeometry();
+  const particlesCount = 5000;
+  const posArray = new Float32Array(particlesCount * 3);
+
+  for (let i = 0; i < particlesCount * 3; i++) {
+    posArray[i] = (Math.random() - 0.5) * 10;
+  }
+
+  particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+  const particlesMaterial = new THREE.PointsMaterial({
+    color: 0x00d1b2,
+    size: 0.02
+  });
+
+  const particles = new THREE.Points(particlesGeometry, particlesMaterial);
+  scene.add(particles);
+
+  // Posição da câmera
+  camera.position.z = 5;
+
+  // Função de Animação do Fundo WebGL
+  function animate() {
+    requestAnimationFrame(animate);
+    particles.rotation.y += 0.002;
+    particles.rotation.x += 0.001;
+    renderer.render(scene, camera);
+  }
+
+  animate();
+
+  // Responsividade
+  window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+
+  // Movimento do Mouse
+  document.addEventListener('mousemove', (event) => {
+    camera.position.x = (event.clientX / window.innerWidth - 0.5) * 2;
+    camera.position.y = (-(event.clientY / window.innerHeight - 0.5) * 2) + 1;
+  });
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const splash = document.getElementById("splash-screen");
+    const fadeInElements = document.querySelectorAll(".fade-in-element");
+
+    setTimeout(() => {
+      // Esconde a splash screen
+      splash.style.opacity = "0";
+      splash.style.pointerEvents = "none";
+
+      // Mostra os elementos principais com um pequeno atraso
+      fadeInElements.forEach((element, index) => {
+        setTimeout(() => {
+          element.classList.add("visible");
+        }, index * 300); // Intervalo para cada elemento aparecer
+      });
+    }, 3000); // Tempo de duração da splash screen, ajuste conforme necessário
+  });
+
+  function openModal(id) {
+    document.getElementById(id).style.display = "flex";
+  }
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+
+</script>
+</body>
+
+</html>
